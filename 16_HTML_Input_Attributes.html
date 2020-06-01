@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Attributes</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin-bottom: 500px;
+        }
+        form{
+            background: linear-gradient(45deg,greenyellow,greenyellow);
+            padding: 15px;
+            width: 400px;
+            box-shadow: 0 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Simple Input Field Attributes
+        value,
+        readonly,
+        disabled,
+        size,
+        rows , cols
+    -->
+
+    <h2>value</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text" value="Naveen">
+    </form>
+
+    <h2>ReadOnly</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text" value="Naveen" readonly>
+    </form>
+
+    <h2>Disabled</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text" value="Naveen" disabled>
+        <input type="checkbox" disabled>
+        <button type="button" disabled>Login</button>
+    </form>
+
+    <h2>Size</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text" size="40">
+    </form>
+
+    <h2>rows , cols , maxlength</h2>
+    <form>
+        <label>Your Comments</label>
+        <textarea rows="5" cols="40" maxlength="100"></textarea>
+    </form>
+
+    <!--
+        HTML5 Input Field Attributes
+        required,
+        novalidate,
+        autofocus,
+        placeholder,
+        pattern
+    -->
+
+    <h2>Required</h2>
+    <form>
+        <label>User Name*</label>
+        <input type="text" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>no validate</h2>
+    <form novalidate>
+        <label>Enter Your Website</label>
+        <input type="url">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Auto Focus</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text" autofocus>
+    </form>
+
+    <h2>Place Holder</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text" placeholder="Enter Your Name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Pattern</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text" required pattern="^[A-Za-z0-9_]{1,15}$">
+        <input type="submit" value="Submit">
+    </form>
+
+
+<br><br><br>
+</body>
+</html>

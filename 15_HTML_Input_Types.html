@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Types</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin-bottom: 500px;
+        }
+        form{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            padding: 15px;
+            width: 400px;
+            box-shadow: 0 5px 10px red;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Simple Input Types
+        1) Text Box
+        2) Password Box
+        3) Radio Button
+        4) Check Box
+        5) Normal Button
+    -->
+
+    <h2>Text Box</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text">
+    </form>
+
+    <h2>Password Box</h2>
+    <form>
+        <label>Password</label>
+        <input type="password">
+    </form>
+
+    <h2>Radio Button</h2>
+    <form>
+        <label>Howz HTML ?</label>
+        <input type="radio" value="good" name="feedback"> Good
+        <input type="radio" value="ok" name="feedback"> Ok
+    </form>
+
+    <h2>Check box</h2>
+    <form>
+        <label>Select Your Hobbies</label>
+        <input type="checkbox" value="eating"> Eating
+        <input type="checkbox" value="coding"> Coding
+        <input type="checkbox" value="sleeping"> Sleeping
+    </form>
+
+    <h2>Button </h2>
+    <form>
+        <button>Click Me</button>
+    </form>
+
+    <!-- HTML5 Input Types
+        color,
+        date,
+        datetime-local,
+        email,
+        month,
+        number,
+        range,
+        search,
+        time,
+        url,
+        Week
+    -->
+
+    <h2>Color</h2>
+    <form>
+        <label>Select a Color</label>
+        <input type="color">
+    </form>
+
+    <h2>Date</h2>
+    <form>
+        <label>Select a Date</label>
+        <input type="date">
+    </form>
+
+    <h2>Date & Time</h2>
+    <form>
+        <label>Select a Date & Time</label>
+        <input type="datetime-local">
+    </form>
+
+    <h2>Email</h2>
+    <form>
+        <label>Enter Your Email</label>
+        <input type="email">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Month</h2>
+    <form>
+        <label>Select a Month</label>
+        <input type="month">
+    </form>
+
+    <h2>Time</h2>
+    <form>
+        <label>Select a Time</label>
+        <input type="time">
+    </form>
+
+    <h2>Week</h2>
+    <form>
+        <label>Select a Week</label>
+        <input type="week">
+    </form>
+
+    <h2>File</h2>
+    <form>
+        <label>Select a File</label>
+        <input type="file">
+    </form>
+
+    <h2>URL</h2>
+    <form>
+        <label>Enter a Website</label>
+        <input type="url">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

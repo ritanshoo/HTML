@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin-bottom: 500px;
+        }
+        form{
+            background-color: lightsalmon;
+            padding: 15px;
+            width: 400px;
+            box-shadow: 0 5px 5px black;
+        }
+    </style>
+</head>
+<body>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.71291175263!2d78.43588062031763!3d17.439206280255735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c55bb43183%3A0x1abc135b23ee2703!2sAmeerpet%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1573709426314!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe><br/>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2AKRG0TUPec?start=285" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="600px" height="350px" src="https://en.wikipedia.org/wiki/JavaScript"></iframe>
+
+<iframe width="600px" height="350px" frameborder="0" src="https://momento360.com/e/u/3d8e13a3043048709c4cfd391c49dfde?utm_campaign=embed&utm_source=other&utm_medium=other&heading=0&pitch=0&field-of-view=75"></iframe>
+
+<br>
+
+<iframe width="600px" height="350px" src="img/Course_Content_UI_Full_Stack.pdf"></iframe>
+
+<br>
+
+<iframe src="https://momento360.com/e/u/3d8e13a3043048709c4cfd391c49dfde?utm_campaign=embed&utm_source=other&utm_medium=other&heading=0&pitch=0&field-of-view=75"></iframe>
+
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML -->
+
+    <!--
+        simple Login Form
+        Login Form with Table
+        Select Box
+        Text Area
+        DataList
+    -->
+
+    <h2>Simple Form</h2>
+    <form method="post">
+        <label>User Name</label>
+        <input type="text" name="username">
+        <br>
+        <label>Password</label>
+        <input type="password" name="password">
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Simple Login form with table</h2>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>User Name</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+                <td>
+                    <input type="submit" value="Login">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Select Box with options</h2>
+    <form>
+        <label>Select a Technology</label>
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>JQuery</option>
+            <option>Bootstrap</option>
+            <option>AJAX</option>
+        </select>
+    </form>
+
+    <h2>Select Box with opt group</h2>
+    <form>
+        <label>Select a Technology</label>
+        <select>
+            <optgroup label="Languages">
+                <option>Java</option>
+                <option>PHP</option>
+                <option>Python</option>
+            </optgroup>
+            <optgroup label="Scripts">
+                <option>JavaScript</option>
+                <option>Shell Script</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <h2>Text Area Box</h2>
+    <form>
+        <label>Your Comments</label>
+        <textarea rows="5" cols="40" maxlength="100"></textarea>
+    </form>
+
+    <h2>Data List from HTML 5</h2>
+    <form>
+        <label>Select a Technology</label>
+        <input list="tech">
+        <datalist id="tech">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>JQuery</option>
+            <option>Bootstrap</option>
+            <option>AJAX</option>
+        </datalist>
+    </form>
+	
+	<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+  <option value="Chocolate"></option>
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+
+
+</body>
+</html>
